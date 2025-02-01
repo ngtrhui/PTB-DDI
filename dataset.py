@@ -84,8 +84,9 @@ class DDIDataset(InMemoryDataset):
         return split_dict
 
     def process_1D(self, root):
-        file_path = 'D:/Documents/nckh/code/PTB-DDI/datasets/drugbank/drugbank_train/raw/train_drugbank_smiles_new.csv'
-        df1 = pd.read_csv(file_path)
+        # file_path = 'D:/Documents/nckh/code/PTB-DDI/datasets/drugbank/drugbank_train/raw/train_drugbank_smiles_new.csv'
+        # df1 = pd.read_csv(file_path)
+        df1 = pd.read_csv('datasets/drugbank/drugbank_train/raw/train_drugbank_smiles_new.csv')
 
         data_list = []
         data_len = len(df1)
